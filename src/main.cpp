@@ -10,13 +10,13 @@
 
 #include <glm/glm.hpp>
 
-#include "shader.h"
-
 #define STB_IMAGE_IMPLEMENTATION
 #include "stb_image.h"
 
+#include "shader.h"
+
 // contants
-extern const int width{ 1024 }, height{ 1024 };
+constexpr int width{ 1024 }, height{ 1024 };
 constexpr float movement_speed{ 1.0f };
 
 // global variables
@@ -76,7 +76,7 @@ int main()
 	// glfw window icon
 	// ----------------
 	GLFWimage images[1];
-	images[0].pixels = stbi_load("icon.png", &images[0].width, &images[0].height, 0, 4); //rgba channels
+	images[0].pixels = stbi_load("res/icon.png", &images[0].width, &images[0].height, 0, 4); //rgba channels
 	glfwSetWindowIcon(window, 1, images);
 	stbi_image_free(images[0].pixels);
 
@@ -91,7 +91,7 @@ int main()
 
 	// build and compile our shader program
 	// ------------------------------------
-	Shader shader("vertex.gls", "fragment.gls");
+	Shader shader("res/vertex.gls", "res/fragment.gls");
 	shader.setVec2("viewportDimensions", width, height);
 
 	// set up vertex data (and buffer(s)) and configure vertex attributes
