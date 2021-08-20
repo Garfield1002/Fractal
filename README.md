@@ -1,10 +1,14 @@
-﻿# Mandelbrot fractal viewer
+﻿# Mandelbrot Fractal Viewer
 
 ## 📚 Usage
 
 I'm not too sure for the moment
 
 ## 🖼 Example results
+
+![Screenshot_0](https://raw.githubusercontent.com/Garfield1002/Fractal/master/res/screenshot_0.png)
+![Screenshot_1](https://raw.githubusercontent.com/Garfield1002/Fractal/master/res/screenshot_1.png)
+![Screenshot_2](https://raw.githubusercontent.com/Garfield1002/Fractal/master/res/screenshot_2.png)
 
 ## 🎮 Controls
 
@@ -17,7 +21,7 @@ I'm not too sure for the moment
 | `W` | Zoom in |
 | `S` | Zoom out |
 
-## 💡 hat I learned
+## 💡 What I learned
 
 ### C++
 
@@ -36,11 +40,11 @@ I had to read through a couple wikipedia articles to learn about implementing th
 I used their _"smoothing function"_: 
 
 ```glsl
-	float log_zn = log(Z.x*Z.x + Z.y*Z.y) / 2.0;
+float log_zn = log(Z.x*Z.x + Z.y*Z.y) / 2.0;
 
-	float nu = log(log_zn / log(2.0)) / log(2.0);
+float nu = log(log_zn / log(2.0)) / log(2.0);
 
-    iteration += 1.0 - nu;
+iteration += 1.0 - nu;
 
-    color = vec4(mix(colormap[int(floor(iteration)) % 17], colormap[(int(floor(iteration)) + 1) % 17], fract(iteration)), 1.0);
+color = vec4(mix(colormap[int(floor(iteration)) % 17], colormap[(int(floor(iteration)) + 1) % 17], fract(iteration)), 1.0);
 ```
