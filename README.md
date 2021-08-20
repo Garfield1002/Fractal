@@ -20,6 +20,7 @@ I'm not too sure for the moment
 | `⬅` | Move the camera left |
 | `W` | Zoom in |
 | `S` | Zoom out |
+| `ESC` | Exit the application |
 
 ## 💡 What I learned
 
