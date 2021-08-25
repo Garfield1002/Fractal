@@ -13,7 +13,7 @@ I'm not too sure for the moment
 ## 🎮 Controls
 
 | Key | Action |
-| :-: | :----: |
+| :-: | :----:             |
 | `⬆` | Move the camera up |
 | `➡` | Move the camera right |
 | `⬇` | Move the camera down |
