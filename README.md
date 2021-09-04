@@ -1,9 +1,7 @@
-﻿# Mandelbrot Fractal Viewer
+# Mandelbrot Fractal Viewer with OpenGL Shaders
 
-## 📚 Usage
-
-I'm not too sure for the moment
-
+A C++ implementation of a Mandelbrot explorer built using OpenGL Shaders.
+ 
 ## 🖼 Example results
 
 ![Screenshot_0](https://raw.githubusercontent.com/Garfield1002/Fractal/master/res/screenshot_0.png)
