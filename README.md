@@ -24,10 +24,7 @@ A C++ implementation of a Mandelbrot explorer built using OpenGL Shaders.
 
 ### C++
 
-This was one of my first C++ and OpenGL projects, so quite a lot. Here are a few takeaways:
-
-- `uniforms` in GLSL to pass data to the shaders
-- Classes and Header files (`Shader::Shader`)
+This was one of my first C++ and OpenGL projects, so quite a lot.
 
 ### CMake
 
